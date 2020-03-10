@@ -23,7 +23,7 @@ meaning that between 12ms and 14.5ms were being billed for the "count one thousa
 CPU when using a multi_index table. These values come from the transaction receipt, so they
 are the most accurate possible according to the eosio internal accounting.
 
-## With smart-table
+## With `smart_table`
 
 The idea is to make tables lazy, by using a `deque` to store the all entries and flush
 the contents of of the cache when the object is destroyed, performing only one write to the
