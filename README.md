@@ -25,7 +25,7 @@ are the most accurate possible according to the eosio internal accounting.
 
 ## With `smart_table`
 
-The idea is to make tables lazy, by using a `deque` to store the all entries and flush
+The idea is to make tables lazy, by using a `std::deque` to store the all entries and flush
 the contents of of the cache when the object is destroyed, performing only one write to the
 multi_index table per each entry in the cache that was modified.
 
